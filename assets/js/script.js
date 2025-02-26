@@ -75,15 +75,6 @@ document.querySelectorAll(".whatsappBtn").forEach(button => {
     document.getElementById('portfolio-desc_2').textContent = translations[language].portfolioDesc2;
     document.getElementById('portfolio-desc_3').textContent = translations[language].portfolioDesc3;
     document.getElementById('portfolio-desc_4').textContent = translations[language].portfolioDesc4;
-
-    const portfolioList = document.getElementById('portfolio-list');
-    portfolioList.innerHTML = '';
-    translations[language].portfolioList.forEach(item => {
-      const li = document.createElement('li');
-      li.textContent = item;
-      portfolioList.appendChild(li);
-    });
-  
     document.getElementById('contact-title').textContent = translations[language].contactTitle;
     document.getElementById('contact-btn').textContent = translations[language].contactBtn;
     document.getElementById('whatsapp-btn').textContent = translations[language].whatsappBtn;
